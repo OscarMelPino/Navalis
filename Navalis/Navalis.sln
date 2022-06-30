@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navalis", "Navalis\Navalis.csproj", "{D43F7818-73B6-4C41-81DF-A414CF6C7F54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navalis", "Navalis\Navalis.csproj", "{D43F7818-73B6-4C41-81DF-A414CF6C7F54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib", "Lib\Lib.csproj", "{0F974B97-3F45-45D8-BCE6-5E02366A2042}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D43F7818-73B6-4C41-81DF-A414CF6C7F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D43F7818-73B6-4C41-81DF-A414CF6C7F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D43F7818-73B6-4C41-81DF-A414CF6C7F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F974B97-3F45-45D8-BCE6-5E02366A2042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F974B97-3F45-45D8-BCE6-5E02366A2042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F974B97-3F45-45D8-BCE6-5E02366A2042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F974B97-3F45-45D8-BCE6-5E02366A2042}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

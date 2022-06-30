@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lib.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,16 @@ namespace Navalis
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region Properties
+        public static Player Player { get; set; }
+
+        #endregion
+
         public MainWindow()
         {
             InitializeComponent();
+            if (Player is null)
+                new Login().ShowDialog();
         }
     }
 }

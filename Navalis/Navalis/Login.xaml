@@ -1,0 +1,36 @@
+﻿<Window x:Class="Navalis.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Navalis"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>            
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="LoginContainer" Orientation="Vertical" Grid.Row="1" Grid.Column="1" >
+            <Label Content="Nombre de usuario"></Label>
+            <TextBox x:Name="TbUsername" ></TextBox>
+            <Label Content="Contraseña"></Label>
+            <PasswordBox x:Name="TbPassword"  ></PasswordBox>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Recuerdame"></Label>
+                    <CheckBox x:Name="cbRemember"></CheckBox>                    
+                </StackPanel>
+                <Button x:Name="btnLogin" Content="Entrar" Click="TryLogin"></Button>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Window>
